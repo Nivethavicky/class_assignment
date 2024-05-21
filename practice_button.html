@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .subscribe-button{
+      background-color: rgb(199, 4, 4);
+      color:white;
+      border:none;
+      /* height:34px;
+      width:100px; */
+      padding-top:10px;
+      padding-bottom: 10px;
+      padding-left:16px;
+      padding-right:16px;
+      border-radius: 2px;
+      cursor:pointer;
+      margin-right:8px;
+      transition:opacity 1s;
+      vertical-align:top;
+    
+    }
+    #join-button{
+     background-color:white;
+     color:blue;
+     border-color: blue;
+     border-style: solid;
+     border-width: 1px;
+     border-radius: 2px;
+      /* width:70px;
+     height:34px;  */
+     padding-top:9px;
+      padding-bottom: 9px;
+      padding-left:16px;
+      padding-right:16px;
+     cursor:pointer;
+     margin-right: 8px;
+      transition: background-color 1s,color 1s; 
+      vertical-align:top; 
+    }
+
+    /* box shadow */
+    .tweet-button{
+      background-color: rgb(70, 70, 201);
+      color:white;
+      border:none;
+      height:36px;
+      width:70px;
+      border-radius:20px;
+      font-weight:bold;
+      font-size:10px;
+      cursor:pointer;
+      transition:box-shadow 0.16s,
+      
+    }
+    .tweet-button:hover{
+      box-shadow:5px 5px 10px rgb(105, 3, 3,0.5);
+    }
+    .cart-button{
+      background-color: yellow;
+      color:black;
+      border:none;
+      height:30px;
+      width:100px;
+      border-radius:20px;
+      font-weight:bold;
+      font-size:15px;
+      cursor:pointer;
+    }
+    .buy-now{
+      background-color: orange;
+      color:black;
+      border:none;
+      height:30px;
+      width:100px;
+      border-radius:20px;
+      font-weight:bold;
+      font-size:15px;
+      cursor:pointer;
+    }
+    .subscribe-button:hover{
+      background-color: aqua;
+      color:red;
+      opacity:0.1;
+    }
+    
+    /*1... pesuedo class mouse hover,active while cliking */
+    /* 2.transition-slow down the changes while hovering usiing transition */
+    .subscribe-button:active{
+      background-color: pink;
+      color:green;
+      opacity:0.4;
+    }
+    #join-button:hover{
+      background-color: yellow;
+      color:red;
+      opacity:0.2;
+    }
+    #join-button:active{
+      background-color: green;
+      color:red;
+      opacity:1;
+    }
+
+    
+    .link{
+      font-size:20px;
+      font-family:'Times New Roman', Times, serif;
+      font-weight:200;
+    }
+    #h1{
+      font-family:'Times New Roman', Times, serif;
+      font-weight:600;
+      font-size:30px;
+    }
+
+  </style>
+</head>
+<body>
+  <!button in html>
+  <button  class="subscribe-button" >
+    SUBSCRIBE
+  </button>
+  <button id="join-button">
+    JOIN
+  </button>
+  <button class="tweet-button">
+    TWEET
+  </button>
+
+  <hr>
+  
+  <a class="link" href="https://www.google.co.in/">Back to google</a>
+  
+  <h1 id="h1">
+    NIKE BLACK RUNNING SHOES
+  </h1>
+<div class="para">
+  <p>free delivery tomorrow.
+</div>
+
+<button class="cart-button">
+  add to cart
+</button>
+
+<button class="buy-now">
+  buy now
+</button>
+  
+<!..pseudo class
+hover effects like color change ,shadow,transition property>
+<!..button , instead setting width and height to the button....use padding...so delete width and height to button, if text inside button bigger, then words inside button will move down,...no proper alignment will be there>
+</body>
+</html>
