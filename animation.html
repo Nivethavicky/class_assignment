@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      background-color: beige;
+    }
+
+    .center{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50,-50);
+      width:200px;
+      height: 200px;
+      border-radius: 50%;
+      
+    }
+    .center .sun{
+       background-color: yellow;
+       width:100px;
+       height:100px ;
+       border-radius:50%;
+       box-shadow: 2px 2px 50px yellow;
+       position:absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%)
+    }
+
+    .outline{
+      border-style:solid;
+      border-color:white;
+      border-width: 1px;
+      box-shadow: 1px 1px 30px whitesmoke;
+      width:40em;
+      height:40em;
+      border-radius:50%;
+      position:relative;
+      
+      
+    }
+
+    .center .sun .earth{
+       background-color:blue;
+       width:200px;
+       height:2px;
+       border-radius:50%;
+       box-shadow: 2px 2px 50px blue;
+       position:absolute;
+       top:50%;
+       left:50%;
+       animation:outline 36.5s linear infinite;
+
+    }
+
+    .earth::before{
+      top:2.8em;
+      right:2.8em;
+      width:3em;
+      height: 3em;
+      content:'';
+
+    }
+
+    @keyframes outline
+    {
+     0%{
+      transform: rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+    }
+
+
+     
+  </style>
+
+
+</head>
+<body>
+  <div class="center">
+       <div class="sun">
+         <div class="earth">
+         </div>
+       </div>
+   </div> 
+
+</body>
+</html>

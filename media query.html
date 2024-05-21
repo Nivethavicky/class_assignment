@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDIA QUERY</title>
+  <style>
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 30px;
+    }
+
+    @media(max-width:900px) {
+      .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    .div1,.div2,.div3,.div4,.div5{
+      width:200px;
+      height:200px;
+      background-color: chartreuse;
+      transition:3s all;
+      border-style: solid;
+      border-width:2px;
+    }
+
+    .div2:hover{
+      transform:rotate(360deg)
+    }
+
+    .div3:hover{
+      transform: skew(50deg)
+    }
+
+    .div4:hover{
+      transform:scale(150%)
+    }
+
+    .div5:hover{
+      transform:translate(100px,100px)
+    }
+  </style>
+</head>
+<body>
+<div class="grid">
+  <div class="div1 ">
+    div1
+  </div>
+
+  <div class="div2">
+    div2
+    rotate
+  </div>
+
+  <div class="div3 ">
+    div3
+    skew
+  </div>
+
+  <div class="div4 ">
+    div4
+    scale
+  </div>
+
+  <div class="div5 ">
+    div5
+    move
+  </div>
+
+  <div class="div1 ">
+    div6
+  </div>
+
+  <div class="div1 ">
+    div7
+  </div>
+
+  <div class="div1 ">
+    div8
+  </div>
+
+  <div class="div1 ">
+    div9
+  </div>
+
+  <div class="div1 ">
+    div10
+  </div>
+
+  <div class="div1 ">
+    div11
+  </div>
+
+  <div class="div1 ">
+    div12
+  </div>
+
+
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <style>
+    body {
+      font-family: arial;
+      margin-top: 0;
+      margin-bottom: 0;
+      overflow-x: hidden;
+    }
+
+    .division1 {
+      background-color: blue;
+      height: 800px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      border: none;
+      border-width: 1px;
+      border-color: lightslategray;
+      background-color: darkblue;
+      width: 100vw;
+      height: 5vh;
+    }
+
+    .header-left {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      padding-left: 50px;
+      margin-right: 100px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      font-size: 16px;
+      width: 700px;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      padding-top: 200px;
+    }
+
+    .content-left {
+      margin-right: 400px;
+      margin-left: 50px;
+      width: 500px;
+    }
+
+    .underline {
+      text-decoration: underline;
+      text-decoration-color: darkgreen;
+      text-decoration-thickness: 5px;
+    }
+
+    .heading {
+      font-size: 45px;
+      color: white;
+      width: 40vw;
+    }
+
+    .para {
+      font-size: 18px;
+      color: white;
+      width: 35vw;
+    }
+
+    .button {
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      border-width: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .content-right {
+      display: flex;
+      margin-right: 200px;
+    }
+
+    .image1,
+    .image {
+      width: 200px;
+      height: 400px;
+      border-radius: 25px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: blueviolet;
+    }
+
+    .image1 {
+      position: relative;
+      top: 0px;
+      right: 90px;
+       z-index: 1; 
+    }
+
+    .image {
+      position: relative;
+      top: 50px;
+    }
+
+    .heading1 {
+      height: 5000px;
+
+    }
+
+    .content1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 200vw;
+      margin-right: 100px;
+    }
+
+    .content1-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image2 {
+      width: 50vw;
+      height: 50vh;
+      padding-top: 50px;
+    }
+
+    .icon1 {
+      border-radius: 100px;
+      width: 60px;
+      height: 60px;
+      margin: 50px;
+    }
+
+    .para1 {
+      font-size: 35px;
+      font-weight: bold;
+      color: blue;
+      width: 50vw;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .para2 {
+      font-size: 16px;
+      width: 50vw;
+      line-height: 25px;
+      margin-top: -35px;
+    }
+
+    .details {
+      margin-right: 150px;
+      padding-right: 50px;
+    }
+
+    .heading2 {
+      display: flex;
+    }
+
+    .head {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 2px;
+      vertical-align: middle;
+    }
+
+    .paragraph {
+      font-size: 14px;
+      line-height: 20px;
+      width: 30vw;
+      vertical-align: middle;
+    }
+
+    .features {
+      color: lightslategray;
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-left: 100px;
+    }
+
+    .line {
+      color: green;
+      margin-top: 12px;
+    }
+
+    .check {
+      color: rgb(4, 4, 26);
+      font-size: 30px;
+      margin-bottom: 50px;
+      margin-left: 100px;
+    }
+
+    .part1 {
+      display: flex;
+    }
+
+    .logo {
+      border-radius: 100px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid {
+      display: flex;
+      border: none;
+      border-width: 2px;
+      background-color: lavenderblush;
+      width: 250px;
+      height: 40px;
+      padding: 15px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .grid-box {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+      column-gap: 200px;
+      row-gap: 25px;
+    }
+
+    .flex1 {
+      border: none;
+      border-width: 2px;
+      background-color: lavenderblush;
+      border: none;
+      border-width: 1px;
+      border-color: lightslategray;
+      margin-top: 50px;
+      width: 1400px;
+      padding-top: 30px;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: none;
+      border-width: 1px;
+      border-color: lightslategray;
+      width: 1600px;
+      height: 5vh;
+      justify-content: space-evenly;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .content3 {
+      display: flex;
+      margin-bottom: 100px;
+    }
+
+    .heading3 {
+      margin-top: 100px;
+    }
+
+    .content3-left {
+      padding-left: 100px;
+    }
+
+    .side-img1 {
+      width: 60px;
+      height: 40px;
+      padding-top: 50px;
+
+    }
+
+    .content4 {
+      display: flex;
+      margin-bottom: 100px;
+      align-items: center;
+    }
+
+    .content4-left {
+      padding-left: 100px;
+    }
+
+    .side-img2 {
+      width: 60px;
+      height: 40px;
+      padding-top: 50px;
+    }
+
+    .content5 {
+      display: flex;
+      margin-bottom: 100px;
+    }
+
+    .content5-left {
+      padding-left: 100px;
+    }
+
+    .content3 {
+      margin-right: 100px;
+    }
+
+    .content6 {
+      display: flex;
+      margin-bottom: 100px;
+    }
+
+    .content6-left {
+      padding-left: 100px;
+    }
+
+    .grid4 {
+      display: grid;
+      grid-template-columns: 50px 50px 50px 50px;
+      row-gap: 10px;
+      column-gap: 260px;
+      padding-left: 100px;
+      margin-bottom: 100px;
+    }
+
+    .ph-img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .footer {
+      background-color: rgb(5, 5, 146);
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="division1">
+    <div class="header">
+      <div class="header-left">
+        <div>
+          Bootslander
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="header-right1">Home</div>
+        <div class="header-right1">About</div>
+        <div class="header-right1">Features</div>
+        <div class="header-right1">Gallery</div>
+        <div class="header-right1">Team</div>
+        <div class="header-right1">Pricing</div>
+        <div class="header-right1">Dropdown</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-left">
+        <h1 class="heading">
+          Build Your Landing page With <span class="underline">Bootslander</span>
+        </h1>
+        <p class="para">
+          We are team of talented designers making websites with Bootstrap
+        </p>
+        <button class="button">
+          GET STARTED
+        </button>
+      </div>
+      <div class="content-right">
+        <img class="image" src="image.jpeg">
+        <img class="image1" src="image1.jpeg">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="heading1">
+    <div class="content1">
+      <div class="content1-left">
+        <img class="image2" src="about.png">
+      </div>
+
+      <div class="content1-right">
+        <div class="para1">
+          <p>
+            Enim quis est voluptatibus aliquid consequatur fugiat
+          </p>
+        </div>
+
+        <div class="para2">
+          <p>
+            Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus
+            laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla
+            tenetur. Suscipit aut voluptate.
+          </p>
+        </div>
+
+        <div class="heading2">
+          <img class="icon1" src="about.png">
+          <div class="details">
+            <h6 class="head">
+              Lorem Ipsum
+            </h6>
+            <p class="paragraph">
+
+              Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident
+            </p>
+          </div>
+        </div>
+
+        <div class="heading2">
+          <img class="icon1" src="about.png">
+          <div class="details">
+            <h6 class="head">
+              Nemo Enim
+            </h6>
+            <p class="paragraph">
+
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+              atque
+            </p>
+          </div>
+        </div>
+
+        <div class="heading2">
+          <img class="icon1" src="about.png">
+          <div class="details">
+            <h6 class="head">
+              Dine Pad
+            </h6>
+            <p class="paragraph">
+              Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut
+              eligendi omnis
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content2">
+      <div class="part1 ">
+        <p class="features">
+          FEATURES
+        </p>
+        <p class="line">
+          -------------
+        </p>
+      </div>
+      <div class="part2">
+        <h2 class="check">
+          CHECK THE FEATURES
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid-box">
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <div class="grid1">
+          <img class="logo" src="about.png">
+        </div>
+        <div class="lorem">
+          Lorem Ipsum
+        </div>
+      </div>
+
+      <div class="flex" style="background-color: antiquewhite; width:1800px; height:200px">
+        <div class="flex1">
+          <div>
+            <p class="clients">232</p>
+          </div>
+          <div>
+            <p class="clients-info">
+              Happy Clients
+            </p>
+          </div>
+        </div>
+
+        <div class="flex1">
+          <div>
+            <p class="clients">232</p>
+          </div>
+          <div>
+            <p class="clients-info">
+              Happy Clients
+            </p>
+          </div>
+        </div>
+
+        <div class="flex1">
+          <div>
+            <p class="clients">232</p>
+          </div>
+          <div>
+            <p class="clients-info">
+              Happy Clients
+            </p>
+          </div>
+        </div>
+
+        <div class="flex1">
+          <div>
+            <p class="clients">232</p>
+          </div>
+          <div>
+            <p class="clients-info">
+              Happy Clients
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading3">
+      <div class="content3">
+        <div class="content3-left">
+          <img class="image2" src="side-img1.png">
+        </div>
+
+        <div class="content3-right">
+          <div class="para1">
+            <h3 style="width: 1300px">
+              Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+            </h3>
+          </div>
+
+          <div class="para2">
+            <p style="font-style: italic;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+
+            <p>
+              &#9989; Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p>
+              &#9989; Duis aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+
+            <p>
+              &#9989; Iure at voluptas aspernatur dignissimos doloribus repudiandae.
+
+            </p>
+
+            <p>
+              &#9989; Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.
+
+            </p>
+
+            <p>
+              Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita omnis eum consequatur non. Sed in
+              asperiores aut repellendus. Error quisquam ab maiores. Quibusdam sit in officia
+            </p>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="heading4">
+      <div class="content4">
+        <div class="content4-left">
+          <div class="para1">
+
+            <h3 style="font-size: 26px" ;>
+              Corporis temporibus maiores provident
+            </h3>
+          </div>
+
+          <div class="para3">
+            <p style="font-style: italic;font-size: 16px; margin-top: 20px;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+
+            <p style="font-size:16px">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit.
+            </p>
+
+            <p style="font-size:16px">
+              Iure at voluptas aspernatur dignissimos doloribus repudiandae.Est ipsa assumenda id facilis nesciunt
+              placeat sed doloribus praesentium.
+
+            </p>
+
+          </div>
+        </div>
+
+
+
+        <div class="content4-right">
+          <img class="image2" src="side-img2.png">
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <div class="heading5">
+      <div class="content5">
+        <div class="content5-left">
+          <img class="image2" src="side-img1.png">
+        </div>
+
+        <div class="content5-right">
+          <div class="para1">
+            <h3 style="width: 1300px">
+              Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+            </h3>
+          </div>
+
+          <div class="para2">
+            <p style="font-style: italic;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+
+            <p>
+              &#9989; Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p>
+              &#9989; Duis aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+
+            <p>
+              &#9989; Iure at voluptas aspernatur dignissimos doloribus repudiandae.
+
+            </p>
+            <p>
+              Qui consequatur temporibus. Enim et corporis sit sunt harum praesentium suscipit ut voluptatem. Et nihil
+              magni debitis consequatur est.
+            </p>
+
+            <p>
+              Suscipit enim et. Ut optio esse quidem quam reiciendis esse odit excepturi. Vel dolores rerum soluta
+              explicabo vel fugiat eum non.
+            </p>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="heading6">
+        <div class="content6">
+          <div class="content6-left">
+            <div class="para1">
+
+              <h3 style="font-size: 26px" ;>
+                Corporis temporibus maiores provident
+              </h3>
+            </div>
+
+            <div class="para3">
+              <p style="font-style: italic;font-size: 16px; margin-top: 20px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+
+              <p style="font-size:16px">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit.
+              </p>
+
+              <p style="font-size:16px">
+                Iure at voluptas aspernatur dignissimos doloribus repudiandae.Est ipsa assumenda id facilis nesciunt
+                placeat sed doloribus praesentium.
+
+              </p>
+
+            </div>
+          </div>
+
+
+
+          <div class="content6-right">
+            <img class="image2" src="side-img2.png">
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="content7">
+        <div class="part1 " style="margin-bottom:-10px;">
+          <p class="features">
+            GALLERY
+          </p>
+          <p class="line">
+            -------------
+          </p>
+        </div>
+        <div class="part2">
+          <h2 class="check" style="margin-top:20px;">
+            CHECK OUR GALLERY
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid4">
+
+        <div class="grid5">
+          <img class="ph-img" src="gallery-1.jpeg">
+        </div>
+
+        <div class="grid6">
+          <img class="ph-img" src="gallery-2.jpeg">
+        </div>
+
+        <div class="grid7">
+
+          <img class="ph-img" src="gallery-3.jpeg">
+        </div>
+
+        <div class="grid8">
+
+          <img class="ph-img" src="gallery-4.jpeg">
+        </div>
+
+        <div class="grid9">
+
+          <img class="ph-img" src="gallery-5.jpeg">
+        </div>
+
+        <div class="grid10">
+
+          <img class="ph-img" src="gallery-6.jpeg">
+        </div>
+
+        <div class="grid11">
+
+          <img class="ph-img" src="gallery-7.jpeg">
+        </div>
+
+        <div class="grid12">
+
+          <img class="ph-img" src="gallery-8.jpeg">
+        </div>
+
+
+      </div>
+    </div>
+    <div></div>
+
+    <div class="footer" style="padding-left: 600px; padding-right: 200px;">
+      <img class="mypic" src="mypic1.jpeg" style="width:200px; height:200px; border-radius: 100px;">
+      <p style="font-size: 50px; font-weight: bold; padding-right: 600px; color: brown;"> DESIGNER</p>
+      <P> </P>
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+</body>
+
+</html>

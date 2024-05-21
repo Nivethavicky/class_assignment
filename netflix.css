@@ -1,0 +1,400 @@
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.content1{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url(netflix-image/background.jpg);
+  background-size: cover;
+  background-position:center;
+  height:90vh;
+  
+}
+
+
+/* nav bar */
+
+nav img{
+  width:16%;
+}
+
+
+ .btn {
+  background: rgb(229, 9, 20);
+  color: whitesmoke;
+  border-radius: 5px;
+  pointer:cursor;
+}
+
+.btn:hover {
+  background: rgb(193, 17, 25);
+  color:whitesmoke;
+}
+
+
+.content-2 .container{
+  padding-top:100px;
+}
+
+.content-2 h1 {
+  font-size: 60px;
+  font-weight:bolder;
+
+}
+
+
+.div1{
+  margin-bottom: 20px;
+}
+.content-2 .para1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.content-2 .para2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+form {
+  width: 60%;
+}
+
+form #floatingInput {
+  color: #fff;
+}
+
+form .form-control:focus {
+  border-color: #fff;
+  box-shadow: none;
+  border-width: medium;
+}
+
+form .form-floating>.form-control:focus~label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+form .form-floating>.form-control:focus~label::after {
+  background-color: transparent;
+}
+
+form .form-floating {
+  width: 50%;
+}
+
+form #floatingInput {
+  background: transparent;
+}
+
+form label {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+}
+
+.get-started-btn {
+  height: 60px;
+  font-size: 24px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: red;
+}
+
+.get-started-btn::after {
+  content: "\276F";
+  margin-left: 5px;
+}
+
+/* purple section */
+.content-3{
+  background-color: #01010c;
+  height:220vh;
+  border-top-color: rgb(119, 2, 80);
+  border-top-style:solid;
+  border-width: 6px;
+  border-top-left-radius:6%;
+  border-top-right-radius: 6%;
+  width:100%;
+  position:relative;
+  margin-top: -100px;
+  box-shadow: 0px 3px 5px rgba(blue,0.5);
+  /* box-shadow:  50px 15px rgb(38, 38, 151); */
+  /* right:-100px;
+  left:-20px;
+  top:30px; */
+  margin-bottom: 200px;
+   
+}
+
+ .content-1{
+  position:relative;
+  z-index:1;
+  
+}
+
+
+
+.purple-section {
+  
+  width: 90%;
+  
+  
+
+  background-color:rgb(92, 8, 22);
+  margin:40px 60px;
+  border-radius:15px;
+
+  
+
+}
+
+.purple-section .container-md {
+  
+  
+  background: radial-gradient(120.35% 220% at 49.86% -6.29%, #e50914 0%, #0e1b4f 46.15%, #0d1121 100%);
+  
+  color: #fff;
+  padding: 22px;
+}
+
+
+
+
+
+/* faq section */
+.faq-section{
+  margin-top: 300px;
+}
+
+.faq-section h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.faq-section button {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faq-section .accordion {
+  --bs-accordion-color: rgb(255, 255, 255);
+  --bs-accordion-bg: rgb(45, 45, 45);
+  --bs-accordion-border-color: none;
+  --bs-accordion-border-radius: none;
+}
+
+ /* .faq-section .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.faq-section .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+} */
+
+.faq-section .accordion-button:hover {
+  background-color: rgb(65,65,65);
+}
+
+ .faq-section .accordion-button:not(.collapsed) { 
+  background-color: rgb(65,65,65);
+  color: rgb(255,255,255);
+}
+
+.faq-section .accordion-button::after {
+  content: "+";
+  background-image: none;
+  position: absolute;
+  height: 30px;
+  font-size: 50px;
+  top: 5px;
+  right: 45px;
+  font-weight: 100;
+}
+
+ .faq-section .accordion-button:not(.collapsed)::after {  
+  background-image: none;
+  transform: none;
+  content: "\00d7";
+}
+
+/* footer */
+
+footer {
+  border-top: 5px solid #232323;
+}
+
+footer p,
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer select {
+    background: transparent;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    appearance: none;
+    border-radius: 5px;
+}
+
+/* footer img {
+    filter: invert();
+    top: 8px;
+    left: 12px;
+} */
+
+
+footer .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  top: 15px;
+  right: -115px;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 992px) {
+  nav img {
+      width: 17%;
+  }
+
+  .container .h1
+   {
+      font-size: 2rem;
+      font-weight: 700;
+  }
+
+  .container .para1,
+  .container .para2,
+  .faq-section h3 {
+      font-size: 1.125rem;
+  }
+
+  .purple-section img {
+    width: 50%;
+}
+
+.enjoy-section .container {
+    padding-top: 5rem;
+}
+}
+
+@media only screen and (max-width: 768px) {
+nav img {
+    width: 25%;
+}
+
+header {
+    height: 100vh;
+}
+
+.purple-section .container-md {
+    background: radial-gradient(120.35% 220% at 49.86% -6.29%, #e50914 0%, #0e1b4f 46.15%, #0d1121 100%);
+    padding-top: 4rem;
+    margin: 0 24px;
+}
+
+.purple-section img {
+    position: fixed;
+    width: 15%;
+    top: -50px;
+    left: 45px;
+}
+
+}
+
+@media only screen and (max-width: 576px) {
+    nav img {
+        width: 35%;
+    }
+
+    header {
+        height: 110vh;
+    }
+
+    form .form-floating {
+        width: 90%;
+    }
+
+    .purple-section img {
+        width: 20%;
+        top: -45px;
+    }
+}
+
+
+
+.content-4{
+  width: 80vw;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+ }
+ .row1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  column-gap: 1vw;
+  row-gap: 1vh;
+ }
+ .reason{
+  border-radius: 10px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 2%;
+  line-height: 2.5em;
+  background: linear-gradient(to bottom right, rgba(52, 28, 129, 0.994),rgba(93, 1, 44, 0.172))
+ }
+ .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1vh;
+  flex: 4;
+ }
+ .details p{
+  font-weight: 550;
+  line-height: 1.5em;
+  flex: 3;
+ }
+ .details h4{
+  flex: 2;
+ }
+
+ .icon{
+        
+  /* margin-left: 12vw; */
+  /* background: red; */
+  align-self: end;
+  flex: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+ }
+ .icon i{
+  font-size: 3em;
+
+ }
+
+
