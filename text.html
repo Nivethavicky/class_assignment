@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text in html</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    /* all paragraph tag have common font family, so that can be given commonly by selecting the common name without using code again and again */
+    p{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top:0;
+      margin-bottom:0;
+    }
+
+  .video-title{
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size:35px;
+    font-weight: bold;
+    font-style: italic;
+    text-align:left;
+    line-height: 33px;
+    /* to remove default paragraph margin top and bottom */
+    margin-bottom:5px;
+  }
+  .video-status{
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size:15px;
+    color:rgb(36, 30, 30);
+    /* margin-top:0; */
+    font-weight: 200;
+    /* margin-bottom:0px; */
+    /* text-align:left; */
+  }
+  .video-author{
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size:15px;
+    color:rgb(36, 30, 30);
+    /* margin-top:0px; */
+    margin-bottom:20px;
+
+
+  }
+  .video-descp{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    color:rgb(36, 30, 30);
+    width:500px;
+    line-height: 22px;
+    margin-top:0;
+  }
+  </style>
+</head>
+<body>
+  <p class="video-title">
+    talking tech and ai with google ceo sundar pichai
+  </p>
+  <!.. html entity is used here (.)>
+  <p class="video-status">
+    3.4M views &#183 6 months ago
+  </p>
+
+  <!..html entity checkmark>
+  <p class="video-author">
+    marquess brownlee &check;
+  </p>
+
+  <p class="video-descp">
+ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, sit enim deleniti quaerat quod corrupti deserunt quia voluptatem quae ipsa illo porro dolor culpa earum accusamus, eos unde quasi eius?
+  </p>
+
+  <img src="image3.jpeg" >
+</body>
+</html>
